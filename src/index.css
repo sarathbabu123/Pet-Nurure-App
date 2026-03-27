@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #fbfbe2;
+  --color-on-background: #1b1d0e;
+  
+  --color-primary: #845400;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ffb347;
+  --color-on-primary-container: #704700;
+  
+  --color-secondary: #016e21;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #99f899;
+  --color-on-secondary-container: #0f7427;
+  
+  --color-tertiary: #2d6482;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #95c9ec;
+  --color-on-tertiary-container: #1a5573;
+  
+  --color-surface: #fbfbe2;
+  --color-on-surface: #1b1d0e;
+  --color-on-surface-variant: #524535;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f5dc;
+  --color-surface-container: #efefd7;
+  --color-surface-container-high: #eaead1;
+  --color-surface-container-highest: #e4e4cc;
+  
+  --color-outline: #847463;
+  --color-outline-variant: #d6c3b0;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
